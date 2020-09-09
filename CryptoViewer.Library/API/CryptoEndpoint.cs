@@ -23,7 +23,7 @@ namespace CryptoViewer.Library.API
             {
                 if (response.IsSuccessStatusCode)
                 {
-                    //var result = await response.Content.ReadAsStringAsync(); ReadAsAsync<List<CurrencyLimit>>();
+                    var result = await response.Content.ReadAsAsync<List<CurrencyLimit>>();
                     return null;
                 }
                 else
